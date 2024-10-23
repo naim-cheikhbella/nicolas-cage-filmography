@@ -11,7 +11,7 @@ import pandas as pd
 import streamlit as st
 
 # Load the dataset
-data = pd.read_csv('imdb-movies-dataset.csv')  # Make sure this file is in the same directory as your app.py
+data = pd.read_csv('imdb-movies-dataset.csv')
 
 # Check if the 'rating' column exists in the DataFrame
 if 'rating' not in data.columns:
@@ -26,7 +26,7 @@ if 'rating' not in data.columns:
 else:
     rating_col = 'rating'
 
-# Assume the 'title' column is actually 'Title' in your CSV
+# Assume the 'title' column is actually 'Title' in the CSV
 title_col = 'Title'  # Update with the actual column name if different
 
 # Check if title_col exists in data.columns
